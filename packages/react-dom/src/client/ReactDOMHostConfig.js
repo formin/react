@@ -215,7 +215,7 @@ export function prepareForCommit(containerInfo: Container): Object | null {
     }
   }
   ReactBrowserEventEmitterSetEnabled(false);
-  return null;
+  return undefined;
 }
 
 export function beforeActiveInstanceBlur(internalInstanceHandle: Object): void {
