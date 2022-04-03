@@ -324,7 +324,7 @@ export function commitBeforeMutationEffects(
   root: FiberRoot,
   firstChild: Fiber,
 ) {
-  focusedInstanceHandle = prepareForCommit(root.containerInfo);
+  prepareForCommit(root.containerInfo) || null;
 
   nextEffect = firstChild;
   commitBeforeMutationEffects_begin();
